@@ -1,0 +1,29 @@
+==== SYSTEM INFORMATION ====
+
+HostName :
+DESKTOP-2TVHFHN
+
+Current Date and Time :
+Wed Nov 25 08:28:23 PST 2026
+
+Logged-in User:
+nilangshumondal
+
+Disk Usage of Root (/):
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.9G  954G   1% /
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       483Mi       3.2Gi       4.0Mi       195Mi       3.3Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+Top 5 Processes by Memory:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         243  0.0  0.8 123464 32684 ?        Ssl  06:38   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         128  0.0  0.7  44100 29808 ?        Ss   06:38   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root       11381  0.1  0.3 1865776 15248 ?       Ssl  08:27   0:00 /usr/libexec/wsl-pro-service
+root        5489  0.0  0.3  50532 13276 ?        S<s  07:54   0:00 /usr/lib/systemd/systemd-journald
+root           1  0.1  0.3  24696 13060 ?        Ss   06:38   0:11 /usr/lib/systemd/systemd --system --deserialize=28
+
+==== END OF REPORT ====
