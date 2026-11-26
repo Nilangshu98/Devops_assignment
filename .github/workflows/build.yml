@@ -36,6 +36,6 @@ jobs:
           docker logs devops-flask-container
           exit 1
 
-      - name: Stop and remove container
+      - name: Stop container
         if: always()
-        run: docker rm -f devops-flask-container
+        run: docker build -t devops-flask-app devops-assigment-2 || true
