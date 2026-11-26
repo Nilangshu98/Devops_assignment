@@ -1,3 +1,4 @@
+
 name: Docker Build and Health Check
 
 on:
@@ -17,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build -t devops-flask-app .
+        run: docker build -t devops-flask-app ./devops-assigment-2
 
       - name: Run container
         run: docker run -d --name devops-flask-container -p 5000:5000 devops-flask-app
@@ -36,6 +37,8 @@ jobs:
           docker logs devops-flask-container
           exit 1
 
-      - name: Stop container
+      - name: Stop and remove container
         if: always()
-        run: docker build -t devops-flask-app devops-assigment-2 || true
+        run: |
+          docker stop devops-flask-container || true
+          docker rm devops-flask-container || true
