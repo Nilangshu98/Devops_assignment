@@ -32,7 +32,6 @@ jobs:
           done
           echo "Health check failed"
           exit 1
-
       - name: Stop container
         if: always()
-        run:  docker build -t devops-flask-app devops-assigment-2 || true
+        run: docker rm -f devops-flask-container
